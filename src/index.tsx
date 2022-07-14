@@ -1,10 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
 import "./assets/index.scss";
 import Pages from './Pages';
+import ReactDOM from "react-dom/client";
 
 const Application: React.FC<{}>  = () => (
     <Pages/>
 )
-
-render(<Application />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(<Application />);
