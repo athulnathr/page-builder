@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { GrapesjsReact } from 'grapesjs-react';
+import 'grapesjs-preset-webpage';
+import "grapesjs/dist/css/grapes.min.css";
 
-const Page = () => {
-    return <h1>Page</h1>
-}
+export const Primary = () => {
+    return <GrapesjsReact
+        id='grapesjs-react'
+        plugins={[
+            "gjs-blocks-basic",
+        ]}
+    />;
+};
 
-
-export default Page;
+export default Primary;
