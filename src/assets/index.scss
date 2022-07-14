@@ -1,0 +1,12 @@
+@import 'base';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+html,
+body,
+div#root {
+  @include full-page;
+  margin: 0;
+  padding: 0;
+}
